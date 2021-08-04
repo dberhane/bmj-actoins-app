@@ -16,7 +16,7 @@ jobs:
           yarn document-generate
 
       - name: Run document generator 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: yarn document-generate
+        run: yarn build
 
 
       - name: Deploy 🚀
