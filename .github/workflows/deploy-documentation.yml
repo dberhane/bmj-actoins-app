@@ -15,8 +15,9 @@ jobs:
           yarn
           yarn document-generate
           yarn build
-          
-      - name: Git initialise, commit and push    
+
+      - name: Git initialise, commit and push
+        run: |    
           git config user.name dberhane
           git config user.email dberhane@bmj.com
           git status
