@@ -21,6 +21,9 @@ jobs:
           git config user.name dberhane
           git config user.email dberhane@bmj.com
           git status
+          git add docs
+          git commit -m 'project document update'
+          git push origin master
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
