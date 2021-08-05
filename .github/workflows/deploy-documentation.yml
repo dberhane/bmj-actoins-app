@@ -23,7 +23,7 @@ jobs:
           git status
           git add docs
           git commit -m 'project document update'
-          git push origin master
+          git push origin main
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.4
