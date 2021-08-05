@@ -10,7 +10,7 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v2
 
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - name: Install and Build 🔧 # Install and build the app
         run: |
           yarn
           yarn document-generate
@@ -18,8 +18,8 @@ jobs:
 
       - name: Git initialise, commit and push
         run: |    
-          git config user.name dberhane
-          git config user.email dberhane@bmj.com
+          git config user.name journals-document-generator
+          git config user.email journals-document-generator@bmj.com
           git branch -u origin/main
           git status
           git add docs
