@@ -23,7 +23,7 @@ jobs:
           git branch -u origin/main
           git status
           git add docs
-          git commit -m 'project document update'
+          git commit -m 'project document update' || true
           git push origin main 
 
       - name: Deploy 🚀
