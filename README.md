@@ -1,4 +1,4 @@
-# Getting Started with Create React App: test 6 and 1
+# Getting Started with Create React App: test 7 and 2
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
