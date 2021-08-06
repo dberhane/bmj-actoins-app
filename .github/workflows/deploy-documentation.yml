@@ -16,18 +16,10 @@ jobs:
           yarn document-generate
           yarn build
 
-      - name: Git initialise, commit and push
-        run: |    
-          git config user.name journals-document-generator
-          git config user.email journals-document-generator@bmj.com
-          git branch -u origin/main
-          git status
-          git add docs
-          git commit -m 'project document update' || true
-          git push origin main 
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: docs # The branch the action should deploy to.
-          folder: build # The folder the action should deploy.
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./docs
+
+
